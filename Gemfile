@@ -2,6 +2,14 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
+gem 'sass', '~> 3.2.18'
+gem 'compass'
+gem 'susy'
+gem 'compass-h5bp'
+
+# For Github Deploy
+gem "middleman-deploy"
+
 gem "middleman", "~>3.3.3"
 
 # Live-reloading plugin
