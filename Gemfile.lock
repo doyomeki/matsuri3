@@ -7,7 +7,10 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    addressable (2.3.6)
+    backports (3.6.0)
     chunky_png (1.3.1)
+    coderay (1.1.0)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -24,12 +27,26 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
+    ethon (0.7.0)
+      ffi (>= 1.3.0)
     eventmachine (1.0.3)
     execjs (2.2.0)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.9.1)
+      faraday (>= 0.7.4, < 0.10)
     ffi (1.9.3)
     fssm (0.2.10)
+    gh (0.13.2)
+      addressable
+      backports
+      faraday (~> 0.8)
+      multi_json (~> 1.0)
+      net-http-persistent (>= 2.7)
+      net-http-pipeline
     haml (4.0.5)
       tilt
+    highline (1.6.21)
     hike (1.2.3)
     hooks (0.4.0)
       uber (~> 0.0.4)
@@ -37,10 +54,13 @@ GEM
     i18n (0.6.9)
     json (1.8.1)
     kramdown (1.4.0)
+    launchy (2.4.2)
+      addressable (~> 2.3)
     listen (1.3.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
+    method_source (0.8.2)
     middleman (3.3.3)
       coffee-script (~> 2.2.0)
       compass (>= 0.12.4)
@@ -68,6 +88,11 @@ GEM
       middleman-core (>= 3.0.0)
       net-sftp
       ptools
+    middleman-gh-pages (0.0.3)
+      rake (> 0.9.3)
+    middleman-google-analytics (1.0.2)
+      middleman-core (~> 3.2)
+      uglifier (>= 2.1, < 3.0)
     middleman-livereload (3.1.1)
       em-websocket (>= 0.2.0)
       middleman-core (>= 3.0.2)
@@ -80,6 +105,9 @@ GEM
       sprockets-sass (~> 1.1.0)
     minitest (5.3.5)
     multi_json (1.10.1)
+    multipart-post (2.0.0)
+    net-http-persistent (2.9.4)
+    net-http-pipeline (1.0.1)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
@@ -89,18 +117,27 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.2)
       activesupport (>= 3.1)
+    pry (0.9.12.6)
+      coderay (~> 1.0)
+      method_source (~> 0.8)
+      slop (~> 3.4)
     ptools (1.2.4)
+    pusher-client (0.6.0)
+      json
+      websocket (~> 1.0)
     rack (1.5.2)
     rack-livereload (0.3.15)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rake (10.3.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rb-kqueue (0.2.3)
       ffi (>= 0.5.0)
     sass (3.2.19)
+    slop (3.5.0)
     sprockets (2.12.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -117,12 +154,26 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
+    travis (1.6.14)
+      addressable (~> 2.3)
+      backports
+      faraday (~> 0.9)
+      faraday_middleware (~> 0.9, >= 0.9.1)
+      gh (~> 0.13)
+      highline (~> 1.6)
+      launchy (~> 2.1)
+      pry (~> 0.9, < 0.10)
+      pusher-client (~> 0.4)
+      typhoeus (~> 0.6, >= 0.6.8)
+    typhoeus (0.6.8)
+      ethon (>= 0.7.0)
     tzinfo (1.2.1)
       thread_safe (~> 0.1)
     uber (0.0.6)
     uglifier (2.5.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    websocket (1.1.4)
 
 PLATFORMS
   ruby
@@ -132,8 +183,12 @@ DEPENDENCIES
   compass-h5bp
   middleman (~> 3.3.3)
   middleman-deploy
+  middleman-gh-pages
+  middleman-google-analytics
   middleman-livereload (~> 3.1.0)
+  rake
   sass (~> 3.2.18)
   susy
+  travis
   tzinfo-data
   wdm (~> 0.1.0)

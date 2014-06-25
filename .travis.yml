@@ -1,0 +1,12 @@
+---
+language: ruby
+script: bundle exec middleman build
+env:
+  global:
+    - GIT_COMMITTER_NAME=koudaiii
+    - GIT_COMMITTER_EMAIL=cs006061@gmail.com
+    - GIT_AUTHOR_NAME=koudaiii
+    - GIT_AUTHOR_EMAIL=cs006061@gmail.com
+    - secure: "Bx5jzULI3Ul7q43ck2tQwmG4ioasxr9M9EruNLkHJLvqq/rcBZ0nPmC5Zo6jwS50g28ApLQfUniZDvDVDqOX0+UHFsKBoZZj0CQxRQpWlC+4LsnFj6m64b0H0fgbY5KCT9hpiInTbrmHKNbFo/df/xKYNpvU8/opkhA+PLCc46I="
+after_success:
+  - '[ "$TRAVIS_BRANCH" == "design" ] && [ $GH_TOKEN ] && bundle exec middleman deploy >/dev/null 2>&1']]
