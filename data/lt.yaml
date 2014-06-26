@@ -1,0 +1,39 @@
+- order: "1"
+  id: "kenchan"
+  body: "新たなるソーシャルコーディング時代の幕開け"
+  url: "https://speakerdeck.com/kenchan/github-kaigi-2014-lt"
+
+- order: "2"
+  id: "sota0805"
+  body: "Git・Githubに隠された便利な機能"
+  url: "http://qiita.com/sota0805/items/1cf05f2a2be3d6fb3388"
+
+- order: "3"
+  id: "pnsk"
+  body: "GitHub@Ameba (仮）"
+  url: "https://speakerdeck.com/pnsk/githubenterprisedao-ru-tosofalsexiao-guo-at-ameba"
+
+- order: "4"
+  id: "uribo"
+  body: "GitHubで行うreproducible research"
+  url: "https://speakerdeck.com/s_uryu/githubdexing-ureproducible-research-github-kaigi-tokyo-2014"
+
+- order: "5"
+  id: "pwim"
+  body: "Using GitHub to get a better job"
+  url: "https://speakerdeck.com/pwim/using-github-to-get-a-better-job"
+
+- order: "6"
+  id: "sakatam"
+  body: "Hubot レビュアーおみくじ"
+  url: "https://speakerdeck.com/sakatam/hubotrebiyuaomikuzi-at-githubkaigi"
+
+- order: "7"
+  id: "yunico-jp"
+  body: "本当は怖くない！デザイナーがGitを大好きになった♡５つの理由（仮）"
+  url: "https://speakerdeck.com/yunico/20140601-github-kaigi-yunico"
+
+- order: "8"
+  id: "taea"
+  body: "pplog.net の作り方( ˘ω˘)"
+  url: "https://speakerdeck.com/ken_c_lo/pplog-dot-net-falsezuo-rifang-vov-yuruhuwa-development-on-github"

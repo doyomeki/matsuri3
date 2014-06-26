@@ -1,0 +1,139 @@
+---
+title     : GitHub Kaigi
+bodyclass : index
+layout    : layout
+---
+
+#main
+  .text
+    %section#section-detail.cols
+      %h1 Details
+
+      .col4
+        %h2 What?
+        %p
+          GitHub KaigiはGitHub User Group主催のイベントであり、GitHubの正式なイベントではありません。
+        %p
+          GitHub Kaigi is an event organized by the GitHub User Group and is not an official GitHub event.
+
+      .col4
+        %h2 Where
+        %p
+          %a{href: "http://www.cyberagent.co.jp/", target: "_blank"} CyberAgent, Inc.
+        %p
+          〒150-0043
+          %br
+          東京都渋谷区道玄坂1丁目12番1号
+          %br
+          渋谷マークシティ ウエスト 13F
+        %p
+          %a{href: "http://frontrend.github.io/blog/shibuya-markcity/", target: "_blank"} 渋谷マークシティ 13階 サイバーエージェントセミナールームまでの道案内
+        %p
+          %a{href: "http://goo.gl/maps/G8niX", target: "_blank"} Google Map
+
+      .col4
+        %h2 When?
+        %p
+          Sunday, June 1st 2014,
+          %br
+          at 1:30pm (1pm door open)
+
+      .col4
+        %h2 How?
+        %p
+          Doorkeeperから参加登録ができます
+        %a{href: "http://githubkaigi.doorkeeper.jp/events/11081", class: "btn-green", target: "_blank"}
+          Register
+
+    %section#section-time-table.cols
+      %h1 Time table
+
+      .col
+        %ul.time-table-list
+          - data.timetable.each do |tt|
+            %li
+              .head
+                .time
+                  = tt.time
+                .speaker-name
+                  = tt.speaker
+              .body
+                - if tt.url.present?
+                  %a{href: "#{tt.url}", target: "_blank"}
+                    #{tt.body}
+                    %i.icon-external-link
+                - else
+                  = tt.body
+
+    %section#section-speaker.cols
+      %h1 Session & Speaker
+
+      %ul.speaker-list
+        - data.speaker.each do |speaker|
+          %li.speaker-list-item<>
+            .speaker
+              .avatar
+                %a{href: "https://github.com/#{speaker.id}", target: "_blank"}
+                  %img{ src: "#{speaker.avatar}", alt: 'Avatar'}
+              .info
+                .session
+                  - if speaker.url.present?
+                    %a{href: "#{speaker.url}", target: "_blank"}
+                      #{speaker.title}
+                      %i.icon-external-link
+                  - else
+                    = speaker.title
+                .names
+                  .fullname
+                    = speaker.fullname
+                  .sns
+                    %a{href: "https://github.com/#{speaker.id}", target: "_blank"}
+                      %i.icon-github-alt
+                .detail
+                  = speaker.organization
+    %section#section-lt.cols
+      %h1 LT
+
+      .col
+        %p
+          LTの応募はCoplaにて行います。
+          %br
+          抽選で当選したLTと発表の順序は下記の通りになります。
+        %ul.lt-list
+          - data.lt.each do |lt|
+            %li
+              .head
+                .order
+                  = lt.order
+                .speaker-name
+                  %a{href: "https://github.com/#{lt.id}", target: "_blank"} #{lt.id}
+              .body
+                - if lt.url.present?
+                  %a{href: "#{lt.url}", target: "_blank"}
+                    #{lt.body}
+                - else
+                  = lt.body
+
+    %section#section-sponsor.cols
+      %h1 Sponsor
+
+      %ul.sponsor-list
+        - data.sponsor.each do |sponsor|
+          %li.sponsor-list-item<>
+            %p.sponsor-img
+              %a{href: "#{sponsor.url}", target: "_blank"}
+                %img{ src: "#{sponsor.img}", alt: "#{sponsor.name}" }
+            %p.sponsor-role
+              = sponsor.role
+
+    %section#section-team.cols
+      %h1 Team
+
+      %ul.team-list
+        - data.team.each do |member|
+          %li.team-list-item<>
+            %a{href: "https://github.com/#{member.id}", target: "_blank"}
+              %img{ src: "https://avatars2.githubusercontent.com/u//#{member.gravatar}?s=100", alt: 'Avatar' }
+              %span.userid
+                @#{member.id}
+

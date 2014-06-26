@@ -1,0 +1,206 @@
+//
+// Magic (Responsive) Susy Grid System
+//
+
+$show-grid-backgrounds: true
+
+@import "susy"
+
+// For full Susy documentation, visit: http://susy.oddbird.net/tutorial/
+
+// Define mobile-first grid constants.
+$total-columns      : 6
+// You can use ems, px or % to define the grid.
+$column-width       : 45px
+$gutter-width       : 20px
+$grid-padding       : $gutter-width / 2
+
+// Define breakpoints, in this case when there's room for the specified columns.
+$break-phone: 4
+$break-tablet:   8
+$break-desktop: 12
+$break-huge:    16
+
+.container
+  // Include `container` if this element will contain a grid system.
+  @include container($total-columns)
+  // Apply our grid background stripes for development.
+  // @include susy-grid-background
+
+header, #main-content, footer
+  // Clearfix for full-width elements
+  @include clearfix
+
+// Automatically reset the grid width & re-apply the grid background
+// to responsive layouts.
+$layouts: $break-tablet, $break-desktop, $break-huge
+@each $layout in $layouts
+  @include at-breakpoint($layout)
+    .container
+      @include set-container-width
+      // @include susy-grid-background
+
+@include at-breakpoint($break-phone)
+  .header
+    @include span-columns(4)
+    .header_img
+      @include span-columns(2, 4)
+    .header_text
+      @include span-columns(2 omega, 4)
+  .kv-box
+    +span-columns(4)
+    .kv-text
+      +span-columns(4 omega, 4)
+    .kv-octcat
+      +span-columns(4 omega, 4)
+  .speaker-list
+    +span-columns(4)
+    .speaker-list-item
+      +span-columns(4, 4)
+  .cols
+    +span-columns(4)
+    .col4
+      +span-columns(4 omega, 4)
+  #section-lt
+    +span-columns(4)
+    .lt-guideline
+      +span-columns(4, 4)
+    .nav-to-lt-form
+      +span-columns(4, 4)
+  .footer
+    @include span-columns(4)
+    .sns
+      @include span-columns(4 omega, 4)
+    .copy
+      @include span-columns(4 omega, 4)
+  .team-list
+    +span-columns(4)
+    .team-list-item
+      +span-columns(1, 4)
+      +nth-omega(4n)
+
+@include at-breakpoint($break-tablet)
+  .header
+    @include span-columns(8)
+    .header_img
+      @include span-columns(4, 8)
+    .header_text
+      @include span-columns(4 omega, 8)
+  .kv-box
+    +span-columns(8)
+    .kv-text
+      +span-columns(4, 8)
+    .kv-octcat
+      +span-columns(4 omega, 8)
+  .speaker-list
+    +span-columns(8)
+    .speaker-list-item
+      +span-columns(8, 8)
+  #section-lt
+    +span-columns(8)
+    .lt-guideline
+      +span-columns(8, 8)
+    .nav-to-lt-form
+      +span-columns(8, 8)
+  .footer
+    @include span-columns(8)
+    .sns
+      @include span-columns(6, 8)
+    .copy
+      @include span-columns(2 omega, 8)
+  .team-list
+    +span-columns(8)
+    .team-list-item
+      +span-columns(2, 8)
+      +nth-omega(4n)
+
+
+@include at-breakpoint($break-desktop)
+  .header
+    @include span-columns(12)
+    .header_img
+      @include span-columns(6, 12)
+    .header_text
+      @include span-columns(6 omega, 12)
+  .kv-box
+    +span-columns(12)
+    .kv-text
+      +span-columns(6, 12)
+    .kv-octcat
+      +span-columns(6 omega, 12)
+  .speaker-list
+    +span-columns(12)
+    .speaker-list-item
+      +span-columns(12,12)
+  #section-lt
+    +span-columns(12)
+    .lt-guideline
+      +span-columns(6, 12)
+    .nav-to-lt-form
+      +span-columns(6 omega, 12)
+  .footer
+    @include span-columns(12)
+    .sns
+      @include span-columns(8, 12)
+    .copy
+      @include span-columns(4 omega, 12)
+  .team-list
+    +span-columns(12)
+    .team-list-item
+      +span-columns(2, 12)
+      +remove-nth-omega(4n)
+      +nth-omega(6n)
+
+
+@include at-breakpoint($break-huge)
+  .header
+    @include span-columns(16)
+    .header_img
+      @include span-columns(8, 16)
+    .header_text
+      @include span-columns(8 omega, 16)
+  .kv-box
+    +span-columns(16)
+    .kv-text
+      +span-columns(8, 16)
+    .kv-octcat
+      +span-columns(8 omega, 16)
+  .text
+    +span-columns(16)
+  .cols
+    +span-columns(16)
+    .col
+      +span-columns(16, 16)
+    .col4
+      +span-columns(4, 16)
+    .col4:last-child
+      +span-columns(4 omega, 16)
+  .speaker-list
+    +span-columns(16)
+    .speaker-list-item
+      +span-columns(8, 16)
+      +nth-omega(2n)
+  #section-lt
+    +span-columns(16)
+    .lt-guideline
+      +span-columns(8, 16)
+    .nav-to-lt-form
+      +span-columns(8 omega, 16)
+  .footer
+    @include span-columns(16)
+    .sns
+      @include span-columns(12, 16)
+    .copy
+      @include span-columns(4 omega, 16)
+  .team-list
+    +span-columns(16)
+    .team-list-item
+      +span-columns(2, 16)
+      +remove-nth-omega(4n)
+      +remove-nth-omega(6n)
+      +nth-omega(8n)
+
+
+
+
+
