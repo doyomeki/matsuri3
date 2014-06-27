@@ -1,7 +1,7 @@
 header
   position: relative
   width: 100%
-  background-color: #34495e
+  background-color: #7f8c8d
   +at-breakpoint($break-phone)
     height: auto
     padding: 20px 0
@@ -35,7 +35,7 @@ header
       line-height: 40px
       li
         a
-          +link-colors($green, $white, $black, $black, $black)
+          +link-colors($blue, $white, $black, $black, $black)
           padding: 5px
           font-size: 100%
           font-weight: bold
@@ -105,8 +105,8 @@ header
           width: 100%
           height: 0
           border: 27px solid $black
-          border-left: 27px solid #34495e
-          border-right: 27px solid #34495e
+          border-left: 27px solid #7f8c8d
+          border-right: 27px solid #7f8c8d
         &:after
           content: ''
           position: absolute
@@ -115,7 +115,7 @@ header
           z-index: 0
           width: 27px
           height: 0
-          border: 27px solid #34495e
+          border: 27px solid #7f8c8d
           border-left: 27px solid $black
         &:before
           box-sizing: border-box
@@ -124,16 +124,16 @@ header
           box-sizing: border-box
           background-origin: border-box
         &:hover
-          background-color: darken($green, 10%)
+          background-color: darken($blue, 10%)
           transition: background-color 0.1s ease-in
           -webkit-transition: background-color 0.1s ease-in
           &:before
-            border: 27px solid darken($green, 10%)
-            border-left: 27px solid  #34495e
-            border-right: 27px solid #34495e
+            border: 27px solid darken($blue, 10%)
+            border-left: 27px solid  #7f8c8d
+            border-right: 27px solid #7f8c8d
           &:after
-            border: 27px solid #34495e
-            border-left: 27px solid darken($green, 10%)
+            border: 27px solid #7f8c8d
+            border-left: 27px solid darken($blue, 10%)
         +at-breakpoint($break-phone)
           margin: 20px 0
         +at-breakpoint($break-desktop)
