@@ -1,0 +1,41 @@
+- time: 19:00 to 19:10
+  speaker: "@shiraco"
+  body: "Opening"
+  url: " "
+  place: "Dev@研修室1,2"
+
+- time: 19:15 to 19:45
+  speaker: "@all"
+  body: "TISエンジニアたちの自分戦略"
+  url: " "
+  place: "Dev@研修室1,2"
+
+- time: 19:15 to 19:45
+  speaker: "@未定"
+  body: "ビッグデータ on AWS"
+  url: " "
+  place: "Biz@研修室3"
+
+- time: 19:50 to 20:20
+  speaker: "@早瀬"
+  body: "宇宙ビジネスモデル"
+  url: " "
+  place: "Dev@研修室1,2"
+
+- time: 19:50 to 20:20
+  speaker: "@岡部 and @山森"
+  body: "インテックコラボセッション コールクレヨンの成り立ち"
+  url: " "
+  place: "Biz@研修室3"
+
+- time: 20:25 to 20:55
+  speaker: "@yktko & @minoruntw"
+  body: "インテックコラボセッション クラウドとSIerの未来"
+  url: " "
+  place: "Dev@研修室1,2"
+
+- time: 21:00 to 22:00
+  speaker: "LT(5m) × 12"
+  body: "LT懇親会"
+  url: " "
+  place: "Dev@研修室1,2"

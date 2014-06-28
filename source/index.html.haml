@@ -1,0 +1,126 @@
+---
+title     : TIS Matsuri
+bodyclass : index
+layout    : layout
+---
+
+#main
+  .text
+    %section#section-detail.cols
+      %h1 Details
+
+      .col4
+        %h2 What?
+        %p
+          TISMatsuriはTIS社員による社員のための社内カンファレンスです。
+        %p
+          TISMatsuri is a company conference for employees by TIS employees.
+
+      .col4
+        %h2 Where
+        %p
+          %a{href: "http://www.tis.co.jp/", target: "_blank"} TIS, Inc.
+        %p
+          〒60-0023
+          %br
+          東京都新宿区西新宿8-17-1
+          %br
+          住友不動産新宿グランドタワー 14F
+        %p
+          %a{href: "http://www.tis.co.jp/company/information/network/shinjuku.html", target: "_blank"} Map
+
+      .col4
+        %h2 When?
+        %p
+          Thursday, July 31
+          %br
+          at 7:00pm (6:45pm door open))
+
+      .col4
+        %h2 How?
+        %p
+          社内カンファレンスの為,社内SNS(Copla)から参加登録ができます
+        %a{href: "https://www.skipaas.com/tenants/39/mypage", class: "btn-green", target: "_blank"}
+          Register
+
+    %section#section-time-table.cols
+      %h1 Time table
+
+      .col
+        %ul.time-table-list
+          - data.timetable.each do |tt|
+            %li
+              .head
+                .time
+                  = tt.time
+                .speaker-name
+                  = tt.speaker
+              .body
+                - if tt.url.present?
+                  %a{href: "#{tt.url}", target: "_blank"}
+                    #{tt.body}
+                    %i.icon-external-link
+                - else
+                  = tt.body
+              .speaker-place
+                = tt.place
+
+    %section#section-speaker.cols
+      %h1 Session & Speaker
+
+      %ul.speaker-list
+        - data.speaker.each do |speaker|
+          %li.speaker-list-item<>
+            .speaker
+              .avatar
+                %img{ src: "#{speaker.avatar}", alt: 'Avatar'}
+              .info
+                .session
+                  - if speaker.url.present?
+                    %a{href: "#{speaker.url}", target: "_blank"}
+                      #{speaker.title}
+                      %i.icon-external-link
+                  - else
+                    = speaker.title
+                .names
+                  .fullname
+                    = speaker.fullname
+                  .sns
+                    %a{href: "https://twitter.com/#{speaker.id}", target: "_blank"}
+                      %i.icon-twitter
+                .detail
+                  = speaker.organization
+    %section#section-lt.cols
+      %h1 LT
+
+      .col
+        %p
+          LTの応募はCoplaにて行います。
+          %br
+          抽選で当選したLTと発表の順序は下記の通りになります。
+        %ul.lt-list
+          - data.lt.each do |lt|
+            %li
+              .head
+                .order
+                  = lt.order
+                .speaker-name
+                  %a{href: "https://twitter.com/#{lt.id}", target: "_blank"} #{lt.id}
+              .body
+                - if lt.url.present?
+                  %a{href: "#{lt.url}", target: "_blank"}
+                    #{lt.body}
+                - else
+                  = lt.body
+
+    %section#section-team.cols
+      %h1 Team
+
+      %ul.team-list
+        - data.team.each do |member|
+          %li.team-list-item<>
+            %a{href: "https://github.com/#{member.id}", target: "_blank"}
+              %img{ src: "https://avatars2.githubusercontent.com/u//#{member.gravatar}?s=100", alt: 'Avatar' }
+              %span.userid
+                @#{member.id}
+
