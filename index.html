@@ -1,89 +1,475 @@
 <!DOCTYPE html>
-<html>
-
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+  <!--<![endif]-->
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Matsuri3 : 第三回目Matsuriサイト" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Matsuri3</title>
+    <meta charset='utf-8'>
+    <meta lang='ja'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <title>TIS Matsuri</title>
+    <meta content='TISMatsuri' name='description'>
+    <meta content='TISMatsuri Member' name='author'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content='TISMatsuri' property='og:title'>
+    <meta content='article' property='og:type'>
+    <meta content='TISMatsuri, Thursday,  July 5th at 7:00pm. at TIS, Inc. Shinjuku GRAND TOWER' property='og:description'>
+    <meta content='http://matsuri.doyomeki.com/matsuri3' property='og:url'>
+    <meta content='http://matsuri.doyomeki.com/matsuri3/matsuri_neko_black.png' property='og:image'>
+    <meta content='TISMatsuri' property='og:site_name'>
+    <link href='apple-touch-icon-152x152-precomposed.png' rel='apple-touch-icon' sizes='152x152'>
+    <link href='apple-touch-icon-144x144-precomposed.png' rel='apple-touch-icon' sizes='144x144'>
+    <link href='apple-touch-icon-114x114-precomposed.png' rel='apple-touch-icon' sizes='114x114'>
+    <link href='apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon' sizes='72x72'>
+    <link href='apple-touch-icon-precomposed.png' rel='apple-touch-icon'>
+    <link href='favicon.png' rel='shortcut icon'>
+    <link href='favicon.ico' rel='icon' type='image/ico'>
+    <meta content='width=device-width,initial-scale=1.0,user-scalable=yes' name='viewport'>
+    <link href="assets/css/screen.css" rel="stylesheet" type="text/css" /><link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" /><link href="assets/css/sidr/stylesheets/jquery.sidr.dark.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/libs/jquery-1.9.0.min.js" type="text/javascript"></script><script src="assets/js/libs/modernizr-2.6.1.min.js" type="text/javascript"></script><script src="assets/js/mylibs/html5.js" type="text/javascript"></script><script src="assets/js/mylibs/selectivizr-min.js" type="text/javascript"></script><script src="assets/js/mylibs/smoothScroll.js" type="text/javascript"></script>
   </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/doyomeki/matsuri3">View on GitHub</a>
-
-          <h1 id="project_title">Matsuri3</h1>
-          <h2 id="project_tagline">第三回目Matsuriサイト</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/doyomeki/matsuri3/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/doyomeki/matsuri3/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+  <body class='index'>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!--[if lt IE 7]>
+      <p class='chromeframe'>
+        You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.
+      </p>
+    <![endif]-->
+    <header role='banner'>
+      <div class='header-inner'>
+        <div class='header-global'>
+          <mark>
+            <a href='/index.html' style='display: inline-block'>
+              <img height='40px' id='matsuri-logo' src='assets/img/matsuri_neko_black.png' style='pointer-events: none;' width='136px'>
+            </a>
+          </mark>
+          <nav>
+            <ul>
+              <li>
+                <a href='/index.html#section-detail'>
+                  Detail
+                </a>
+              </li>
+              <li>
+                <a href='/index.html#section-time-table'>
+                  Time Table
+                </a>
+              </li>
+              <li>
+                <a href='/index.html#section-speaker'>
+                  Speaker
+                </a>
+              </li>
+              <li>
+                <a href='/index.html#section-lt'>
+                  LT
+                </a>
+              </li>
+              <li>
+                <a href='/index.html#section-team'>
+                  Team
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class='kv-box'>
+          <div class='kv-text'>
+            <h1>
+              <object data='assets/img/white_logo.png' object='' style='pointer-events: none;'></object>
+            </h1>
+            <h2>
+              Thursday, July 5th at 7:00pm (6:45pm door open)
+            </h2>
+            <div class='bt-box'>
+              <a class='kv-btn-registration' href='https://www.skipaas.com/tenants/39/mypage' target='_blank'>
+                <span>Register</span>
+              </a>
+            </div>
+          </div>
+          <img alt='Matsuri Neko Image' class='kv-matsurineko' src='assets/img/matsuri_neko_black.png'>
+        </div>
+      </div>
+    </header>
+    <div id='main'>
+      <div class='text'>
+        <section class='cols' id='section-detail'>
+          <h1>Details</h1>
+          <div class='col4'>
+            <h2>What?</h2>
+            <p>
+              TISMatsuriはTIS社員による社員のための社内カンファレンスです。
+            </p>
+            <p>
+              TISMatsuri is a company conference for employees by TIS employees.
+            </p>
+          </div>
+          <div class='col4'>
+            <h2>Where</h2>
+            <p>
+              <a href='http://www.tis.co.jp/' target='_blank'>TIS, Inc.</a>
+            </p>
+            <p>
+              〒60-0023
+              <br>
+              東京都新宿区西新宿8-17-1
+              <br>
+              住友不動産新宿グランドタワー 14F
+            </p>
+            <p>
+              <a href='http://www.tis.co.jp/company/information/network/shinjuku.html' target='_blank'>Map</a>
+            </p>
+          </div>
+          <div class='col4'>
+            <h2>When?</h2>
+            <p>
+              Thursday, July 31
+              <br>
+              at 7:00pm (6:45pm door open))
+            </p>
+          </div>
+          <div class='col4'>
+            <h2>How?</h2>
+            <p>
+              社内カンファレンスの為,社内SNS(Copla)から参加登録ができます
+            </p>
+            <a class='btn-green' href='https://www.skipaas.com/tenants/39/mypage' target='_blank'>
+              Register
+            </a>
+          </div>
+        </section>
+        <section class='cols' id='section-time-table'>
+          <h1>Time table</h1>
+          <div class='col'>
+            <ul class='time-table-list'>
+              <li>
+                <div class='head'>
+                  <div class='time'>
+                    19:00 to 19:10
+                  </div>
+                  <div class='speaker-name'>
+                    @shiraco
+                  </div>
+                </div>
+                <div class='body'>
+                  Opening
+                </div>
+                <div class='speaker-place'>
+                  Dev@研修室1,2
+                </div>
+              </li>
+              <li>
+                <div class='head'>
+                  <div class='time'>
+                    19:15 to 19:45
+                  </div>
+                  <div class='speaker-name'>
+                    @all
+                  </div>
+                </div>
+                <div class='body'>
+                  TISエンジニアたちの自分戦略
+                </div>
+                <div class='speaker-place'>
+                  Dev@研修室1,2
+                </div>
+              </li>
+              <li>
+                <div class='head'>
+                  <div class='time'>
+                    19:15 to 19:45
+                  </div>
+                  <div class='speaker-name'>
+                    @未定
+                  </div>
+                </div>
+                <div class='body'>
+                  ビッグデータ on AWS
+                </div>
+                <div class='speaker-place'>
+                  Biz@研修室3
+                </div>
+              </li>
+              <li>
+                <div class='head'>
+                  <div class='time'>
+                    19:50 to 20:20
+                  </div>
+                  <div class='speaker-name'>
+                    @早瀬
+                  </div>
+                </div>
+                <div class='body'>
+                  宇宙ビジネスモデル
+                </div>
+                <div class='speaker-place'>
+                  Dev@研修室1,2
+                </div>
+              </li>
+              <li>
+                <div class='head'>
+                  <div class='time'>
+                    19:50 to 20:20
+                  </div>
+                  <div class='speaker-name'>
+                    @岡部 and @山森
+                  </div>
+                </div>
+                <div class='body'>
+                  インテックコラボセッション コールクレヨンの成り立ち
+                </div>
+                <div class='speaker-place'>
+                  Biz@研修室3
+                </div>
+              </li>
+              <li>
+                <div class='head'>
+                  <div class='time'>
+                    20:25 to 20:55
+                  </div>
+                  <div class='speaker-name'>
+                    @yktko & @minoruntw
+                  </div>
+                </div>
+                <div class='body'>
+                  インテックコラボセッション クラウドとSIerの未来
+                </div>
+                <div class='speaker-place'>
+                  Dev@研修室1,2
+                </div>
+              </li>
+              <li>
+                <div class='head'>
+                  <div class='time'>
+                    21:00 to 22:00
+                  </div>
+                  <div class='speaker-name'>
+                    LT(5m) × 12
+                  </div>
+                </div>
+                <div class='body'>
+                  LT懇親会
+                </div>
+                <div class='speaker-place'>
+                  Dev@研修室1,2
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class='cols' id='section-speaker'>
+          <h1>Session & Speaker</h1>
+          <ul class='speaker-list'><li class='speaker-list-item'><div class='speaker'>
+              <div class='avatar'>
+                <img alt='Avatar' src='assets/img/speaker/hayase.JPG'>
+              </div>
+              <div class='info'>
+                <div class='session'>
+                  宇宙ビジネスモデル(仮)            </div>
+                <div class='names'>
+                  <div class='fullname'>
+                    Ryo Hayase              </div>
+                  <div class='sns'>
+                    <a href='https://twitter.com/' target='_blank'>
+                      <i class='icon-twitter'></i>
+                    </a>
+                  </div>
+                </div>
+                <div class='detail'>
+                  TIS 公S1.            </div>
+              </div>
+            </div></li><li class='speaker-list-item'><div class='speaker'>
+              <div class='avatar'>
+                <img alt='Avatar' src='assets/img/speaker/shiraco.png'>
+              </div>
+              <div class='info'>
+                <div class='session'>
+                  TISエンジニアたちの自分戦略            </div>
+                <div class='names'>
+                  <div class='fullname'>
+                    Koji Shiraishi              </div>
+                  <div class='sns'>
+                    <a href='https://twitter.com/shiraco' target='_blank'>
+                      <i class='icon-twitter'></i>
+                    </a>
+                  </div>
+                </div>
+                <div class='detail'>
+                  TIS STC.            </div>
+              </div>
+            </div></li><li class='speaker-list-item'><div class='speaker'>
+              <div class='avatar'>
+                <img alt='Avatar' src='assets/img/speaker/minoruntw.jpg'>
+              </div>
+              <div class='info'>
+                <div class='session'>
+                  インテックコラボセッション iクラウドとSIerの未来(仮)            </div>
+                <div class='names'>
+                  <div class='fullname'>
+                    Minoru Naito              </div>
+                  <div class='sns'>
+                    <a href='https://twitter.com/minoruntw' target='_blank'>
+                      <i class='icon-twitter'></i>
+                    </a>
+                  </div>
+                </div>
+                <div class='detail'>
+                  TIS GIS.            </div>
+              </div>
+            </div></li><li class='speaker-list-item'><div class='speaker'>
+              <div class='avatar'>
+                <img alt='Avatar' src='assets/img/speaker/yktko.jpg'>
+              </div>
+              <div class='info'>
+                <div class='session'>
+                  インテックコラボセッション iクラウドとSIerの未来(仮))            </div>
+                <div class='names'>
+                  <div class='fullname'>
+                    Yukitaka Ohmura              </div>
+                  <div class='sns'>
+                    <a href='https://twitter.com/yktko' target='_blank'>
+                      <i class='icon-twitter'></i>
+                    </a>
+                  </div>
+                </div>
+                <div class='detail'>
+                  INTEC .            </div>
+              </div>
+            </div></li><li class='speaker-list-item'><div class='speaker'>
+              <div class='avatar'>
+                <img alt='Avatar' src='assets/img/speaker/okabe.jpg'>
+              </div>
+              <div class='info'>
+                <div class='session'>
+                  インテックコラボセッション コールクレヨンの成り立ち            </div>
+                <div class='names'>
+                  <div class='fullname'>
+                    Koichiro Okabe              </div>
+                  <div class='sns'>
+                    <a href='https://twitter.com/' target='_blank'>
+                      <i class='icon-twitter'></i>
+                    </a>
+                  </div>
+                </div>
+                <div class='detail'>
+                  TIS CT推.            </div>
+              </div>
+            </div></li><li class='speaker-list-item'><div class='speaker'>
+              <div class='avatar'>
+                <img alt='Avatar' src='assets/img/speaker/noimage.png'>
+              </div>
+              <div class='info'>
+                <div class='session'>
+                  インテックコラボセッション コールクレヨンの成り立ち            </div>
+                <div class='names'>
+                  <div class='fullname'>
+                    Yamamori              </div>
+                  <div class='sns'>
+                    <a href='https://twitter.com/' target='_blank'>
+                      <i class='icon-twitter'></i>
+                    </a>
+                  </div>
+                </div>
+                <div class='detail'>
+                  INTEC .            </div>
+              </div>
+            </div></li><li class='speaker-list-item'><div class='speaker'>
+              <div class='avatar'>
+                <img alt='Avatar' src='assets/img/speaker/noimage.png'>
+              </div>
+              <div class='info'>
+                <div class='session'>
+                  ビッグデータ on AWS            </div>
+                <div class='names'>
+                  <div class='fullname'>
+                    no image              </div>
+                  <div class='sns'>
+                    <a href='https://twitter.com/' target='_blank'>
+                      <i class='icon-twitter'></i>
+                    </a>
+                  </div>
+                </div>
+                <div class='detail'>
+                  TIS .            </div>
+              </div>
+            </div></li></ul>
+        </section>
+        <section class='cols' id='section-lt'>
+          <h1>LT</h1>
+          <div class='col'>
+            <p>
+              LTの応募はCoplaにて行います。
+              <br>
+              抽選で当選したLTと発表の順序は下記の通りになります。
+            </p>
+            <ul class='lt-list'>
+              <li>
+                <div class='head'>
+                  <div class='order'>
+                    1
+                  </div>
+                  <div class='speaker-name'>
+                    <a href='https://twitter.com/koudaiii' target='_blank'>koudaiii</a>
+                  </div>
+                </div>
+                <div class='body'>
+                  祭りの火を消さないアーキテクチャ
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class='cols' id='section-team'>
+          <h1>Team</h1>
+          <ul class='team-list'><li class='team-list-item'><a href='https://github.com/koudaiii' target='_blank'>
+              <img alt='Avatar' src='https://avatars2.githubusercontent.com/u//2929102?s=100'>
+              <span class='userid'>
+                @koudaiii          </span>
+            </a></li></ul>
+        </section>
+      </div>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Matsuri3 maintained by <a href="https://github.com/doyomeki">doyomeki</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-41495968-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-
+    <footer role='contentinfo'>
+      <div class='copy'>
+        &copy;
+        2014
+        TIS Matsuri Member
+      </div>
+      <p class='sns'>
+        <span class='fb-like' data-action='like' data-font='arial' data-href='http://matsuri.doyomeki.com/matsuri3' data-layout='button_count' data-send='true' data-show-faces='false' data-width='460'></span>
+        <a class='twitter-share-button' data-hashtags='TISMatsuri' data-text='TIS Matsuri Vol.3開催!!!' data-url='http://matsuri.doyomeki.com/matsuri3' href='https://twitter.com/share'>
+          Tweet
+        </a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </p>
+    </footer>
+    <script src="assets/js/plugins.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-41495968-1"]);
+      _gaq.push(["_trackPageview"]);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-41495968-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>
