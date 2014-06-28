@@ -58,6 +58,17 @@ helpers do
       start_year.to_s + '-' + end_year.to_s
     end
   end
+
+  def img_holder(opts ={})
+    return "Missing Image Dimension(s)" unless opts[:width] && opts[:height]
+    return "Invalid Image Dimension(s)" unless opts[:width].to_s =~ /^\d+$/ && opts[:height].to_s =~ /^\d+$/
+    img  = "<img data-src=\"holder.js/#{opts[:width]}x#{opts[:height]}/auto"
+    img << "/#{opts[:bgcolor]}:#{opts[:fgcolor]}" if opts[:fgcolor] && opts[:bgcolor]
+    img << "/text:#{opts[:text].gsub(/'/,"\'")}" if opts[:text]
+    img << "\" width=\"#{opts[:width]}\" height=\"#{opts[:height]}\">"
+    img
+  end
+
 end
 
 # Build-specific configuration
@@ -74,6 +85,7 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
 
 
 #  activate :favicon_maker do |f|
