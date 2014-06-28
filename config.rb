@@ -58,17 +58,6 @@ helpers do
       start_year.to_s + '-' + end_year.to_s
     end
   end
-
-  def img_holder(opts ={})
-    return "Missing Image Dimension(s)" unless opts[:width] && opts[:height]
-    return "Invalid Image Dimension(s)" unless opts[:width].to_s =~ /^\d+$/ && opts[:height].to_s =~ /^\d+$/
-    img  = "<img data-src=\"holder.js/#{opts[:width]}x#{opts[:height]}/auto"
-    img << "/#{opts[:bgcolor]}:#{opts[:fgcolor]}" if opts[:fgcolor] && opts[:bgcolor]
-    img << "/text:#{opts[:text].gsub(/'/,"\'")}" if opts[:text]
-    img << "\" width=\"#{opts[:width]}\" height=\"#{opts[:height]}\">"
-    img
-  end
-
 end
 
 # Build-specific configuration
@@ -88,23 +77,23 @@ configure :build do
 
 
 
-#  activate :favicon_maker do |f|
-#    f.template_dir  = File.join(root, 'source')
-#    f.output_dir    = File.join(root, 'build')
-#    f.icons = {
-#      "_favicon_template_hires.png" => [
-#        { icon: "apple-touch-icon-152x152-precomposed.png" },
-#        { icon: "apple-touch-icon-114x114-precomposed.png" },
-#        { icon: "apple-touch-icon-72x72-precomposed.png" },
-#        { icon: "mstile-144x144", format: :png },
-#        { icon: "apple-touch-icon-precomposed.png", size: "57x57" },
-#      ],
-#      "_favicon_template_lores.png" => [
-#        { icon: "favicon.png", size: "16x16" },
-#        { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" },
-#      ]
-#    }
-#  end
+  activate :favicon_maker do |f|
+    f.template_dir  = File.join(root, 'source')
+    f.output_dir    = File.join(root, 'build')
+    f.icons = {
+      "_favicon_template_hires.png" => [
+        { icon: "apple-touch-icon-152x152-precomposed.png" },
+        { icon: "apple-touch-icon-114x114-precomposed.png" },
+        { icon: "apple-touch-icon-72x72-precomposed.png" },
+        { icon: "mstile-144x144", format: :png },
+        { icon: "apple-touch-icon-precomposed.png", size: "57x57" },
+      ],
+      "_favicon_template_lores.png" => [
+        { icon: "favicon.png", size: "16x16" },
+        { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" },
+      ]
+    }
+  end
 
 
 end
