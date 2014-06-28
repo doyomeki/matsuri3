@@ -1,55 +1,48 @@
-- id: nathansobo
-  fullname: Nathan Sobo
-  organization: GitHub Inc.
-  title: "Atom, the Programmable Text Editor"
-  url: "https://www.dropbox.com/s/utaud80bk5egse3/Atom%20%E2%80%93%20GitHub%20Kaigi_jp.pdf"
-  avatar: "https://avatars2.githubusercontent.com/u/1789"
+- id: "" 
+  fullname: "Ryo Hayase"
+  organization: "TIS 公S1."
+  title: "宇宙ビジネスモデル(仮)"
+  url: " "
+  avatar: "assets/img/speaker/hayase.JPG"
 
-- id: cobyism
-  fullname: Coby Chapple
-  organization: GitHub Inc.
-  title: "How GitHub Works"
-  url: "https://speakerdeck.com/cobyism/how-github-works-github-kaigi-tokyo-2014"
-  avatar: "https://avatars2.githubusercontent.com/u/296432"
+- id: shiraco
+  fullname: "Koji Shiraishi"
+  organization: "TIS STC."
+  title: "TISエンジニアたちの自分戦略"
+  url: " "
+  avatar: "assets/img/speaker/shiraco.png"
 
-- id: hirocaster
-  fullname: Hiroki OHTSUKA
-  organization: "GitHub実践入門著者"
-  title: "GitHub実践入門 ─ Pull Request による開発の変革"
-  url: "https://speakerdeck.com/hirocaster/githubkaigi-keynote"
-  avatar: "https://avatars2.githubusercontent.com/u/122881"
+- id: minoruntw
+  fullname: "Minoru Naito"
+  organization: "TIS GIS."
+  title: "インテックコラボセッション iクラウドとSIerの未来(仮)"
+  url: " "
+  avatar: "assets/img/speaker/minoruntw.jpg"
 
-- id: miyagawa
-  fullname: Tatsuhiko Miyagawa
-  organization: Rebuild
-  title: "Rebuild.fm Live"
-  url: ""
-  avatar: "https://avatars2.githubusercontent.com/u/3499"
+- id: yktko
+  fullname: "Yukitaka Ohmura"
+  organization: "INTEC ."
+  title: "インテックコラボセッション iクラウドとSIerの未来(仮))"
+  url: " "
+  avatar: "assets/img/speaker/yktko.jpg"
 
-- id: inao
-  fullname: inao
-  organization: "技術評論社 Gijutsu-Hyohron Co., Ltd."
-  title: "GitHubで 雑誌・書籍を作る"
-  url: "http://www.slideshare.net/inao/githubkaigi"
-  avatar: "https://avatars2.githubusercontent.com/u/35430"
+- id: ""
+  fullname: "Koichiro Okabe"
+  organization: "TIS CT推."
+  title: "インテックコラボセッション コールクレヨンの成り立ち"
+  url: " "
+  avatar: "assets/img/speaker/okabe.jpg"
 
-- id: shibayu36
-  fullname: shibayu36
-  organization: Hatena Inc.
-  title: "はてなブログチームの開発フローとGitHub"
-  url: "https://speakerdeck.com/shibayu36/hatenaburogutimufalsekai-fa-hurotogithub"
-  avatar: "assets/img/shibayu36.jpg"
+- id: "" 
+  fullname:  "Yamamori"
+  organization: "INTEC ."
+  title: "インテックコラボセッション コールクレヨンの成り立ち"
+  url: " "
+  avatar: "assets/img/speaker/noimage.png"
 
-- id: amatsuda
-  fullname: Akira Matsuda
-  organization: "test"
-  title: "OSS と GitHub (仮)"
-  url: "https://speakerdeck.com/a_matsuda/oss-to-github"
-  avatar: "https://avatars2.githubusercontent.com/u/11493"
-
-- id: yuku-t
-  fullname: Yuku TAKAHASHI
-  organization: Increments inc.
-  title: "入門書には載ってない Git & GitHub Tips"
-  url: "https://speakerdeck.com/yuku/ru-men-shu-nihazai-tutenai-git-and-github-tips"
-  avatar: "https://avatars1.githubusercontent.com/u/96157"
+- id: ""
+  fullname: "no image"
+  organization: "TIS ."
+  title: "ビッグデータ on AWS"
+  url: " "
+  avatar: "assets/img/speaker/noimage.png"

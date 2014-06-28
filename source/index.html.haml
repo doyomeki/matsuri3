@@ -12,37 +12,35 @@ layout    : layout
       .col4
         %h2 What?
         %p
-          GitHub KaigiはGitHub User Group主催のイベントであり、GitHubの正式なイベントではありません。
+          TISMatsuriはTIS社員による社員のための社内カンファレンスです。
         %p
-          GitHub Kaigi is an event organized by the GitHub User Group and is not an official GitHub event.
+          TISMatsuri is a company conference for employees by TIS employees.
 
       .col4
         %h2 Where
         %p
-          %a{href: "http://www.cyberagent.co.jp/", target: "_blank"} CyberAgent, Inc.
+          %a{href: "http://www.tis.co.jp/", target: "_blank"} TIS, Inc.
         %p
-          〒150-0043
+          〒60-0023
           %br
-          東京都渋谷区道玄坂1丁目12番1号
+          東京都新宿区西新宿8-17-1
           %br
-          渋谷マークシティ ウエスト 13F
+          住友不動産新宿グランドタワー 14F
         %p
-          %a{href: "http://frontrend.github.io/blog/shibuya-markcity/", target: "_blank"} 渋谷マークシティ 13階 サイバーエージェントセミナールームまでの道案内
-        %p
-          %a{href: "http://goo.gl/maps/G8niX", target: "_blank"} Google Map
+          %a{href: "http://www.tis.co.jp/company/information/network/shinjuku.html", target: "_blank"} Map
 
       .col4
         %h2 When?
         %p
-          Sunday, June 1st 2014,
+          Thursday, July 31
           %br
-          at 1:30pm (1pm door open)
+          at 7:00pm (6:45pm door open))
 
       .col4
         %h2 How?
         %p
-          Doorkeeperから参加登録ができます
-        %a{href: "http://githubkaigi.doorkeeper.jp/events/11081", class: "btn-green", target: "_blank"}
+          社内カンファレンスの為,社内SNS(Copla)から参加登録ができます
+        %a{href: "https://www.skipaas.com/tenants/39/mypage", class: "btn-green", target: "_blank"}
           Register
 
     %section#section-time-table.cols
@@ -64,6 +62,8 @@ layout    : layout
                     %i.icon-external-link
                 - else
                   = tt.body
+              .speaker-place
+                = tt.place
 
     %section#section-speaker.cols
       %h1 Session & Speaker
@@ -73,8 +73,7 @@ layout    : layout
           %li.speaker-list-item<>
             .speaker
               .avatar
-                %a{href: "https://github.com/#{speaker.id}", target: "_blank"}
-                  %img{ src: "#{speaker.avatar}", alt: 'Avatar'}
+                %img{ src: "#{speaker.avatar}", alt: 'Avatar'}
               .info
                 .session
                   - if speaker.url.present?
@@ -87,8 +86,8 @@ layout    : layout
                   .fullname
                     = speaker.fullname
                   .sns
-                    %a{href: "https://github.com/#{speaker.id}", target: "_blank"}
-                      %i.icon-github-alt
+                    %a{href: "https://twitter.com/#{speaker.id}", target: "_blank"}
+                      %i.icon-twitter
                 .detail
                   = speaker.organization
     %section#section-lt.cols
@@ -106,7 +105,7 @@ layout    : layout
                 .order
                   = lt.order
                 .speaker-name
-                  %a{href: "https://github.com/#{lt.id}", target: "_blank"} #{lt.id}
+                  %a{href: "https://twitter.com/#{lt.id}", target: "_blank"} #{lt.id}
               .body
                 - if lt.url.present?
                   %a{href: "#{lt.url}", target: "_blank"}

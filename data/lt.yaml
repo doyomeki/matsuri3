@@ -1,9 +1,4 @@
 - order: "1"
   id: "koudaiii"
-  body: "Docker ~JTF2014~"
-  url: "http://www.slideshare.net/ssusera9d121/dockerjtf2014"
-
-- order: "2"
-  id: "koudaiii"
-  body: "インフラからアプリへ"
-  url: "http://www.slideshare.net/ssusera9d121/ss-16192515"
+  body: "祭りの火を消さないアーキテクチャ"
+  url: " "
