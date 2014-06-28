@@ -86,8 +86,10 @@ layout    : layout
                   .fullname
                     = speaker.fullname
                   .sns
-                    %a{href: "https://twitter.com/#{speaker.id}", target: "_blank"}
-                      %i.icon-twitter
+                    - if speaker.id.present?
+                      %a{href: "https://twitter.com/#{speaker.id}", target: "_blank"}
+                        %i.icon-twitter
+                    - else
                 .detail
                   = speaker.organization
     %section#section-lt.cols
@@ -105,7 +107,9 @@ layout    : layout
                 .order
                   = lt.order
                 .speaker-name
-                  %a{href: "https://twitter.com/#{lt.id}", target: "_blank"} #{lt.id}
+                  - if lt.id.present?
+                    %a{href: "https://twitter.com/#{lt.id}", target: "_blank"} #{lt.id}
+                  - else
               .body
                 - if lt.url.present?
                   %a{href: "#{lt.url}", target: "_blank"}
