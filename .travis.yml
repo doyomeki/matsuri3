@@ -1,6 +1,5 @@
 ---
 language: ruby
-script: bundle exec rake build
 env:
   global:
     - GIT_COMMITTER_NAME=koudaiii
