@@ -1,7 +1,7 @@
 - id: "" 
   fullname: "Ryo Hayase"
   organization: "TIS 公S1."
-  title: "宇宙ビジネスモデル(仮)"
+  title: "JAXA産業連携シンポジウム2014への挑戦(仮)"
   url: " "
   avatar: "assets/img/speaker/hayase.JPG"
 
@@ -15,34 +15,34 @@
 - id: minoruntw
   fullname: "Minoru Naito"
   organization: "TIS GIS."
-  title: "インテックコラボセッション iクラウドとSIerの未来(仮)"
+  title: "INTECコラボセッション クラウドとSIerの未来(仮)"
   url: " "
   avatar: "assets/img/speaker/minoruntw.jpg"
 
 - id: yktko
   fullname: "Yukitaka Ohmura"
   organization: "INTEC ."
-  title: "インテックコラボセッション iクラウドとSIerの未来(仮))"
+  title: "INTECコラボセッション クラウドとSIerの未来(仮)"
   url: " "
   avatar: "assets/img/speaker/yktko.jpg"
 
 - id: ""
   fullname: "Koichiro Okabe"
   organization: "TIS CT推."
-  title: "インテックコラボセッション コールクレヨンの成り立ち"
+  title: "INTECコラボセッション コールクレヨンの成り立ち(仮)"
   url: " "
   avatar: "assets/img/speaker/okabe.jpg"
 
 - id: ""
   fullname:  "MasafumiYamamori"
   organization: "INTEC ."
-  title: "インテックコラボセッション コールクレヨンの成り立ち"
+  title: "INTECコラボセッション コールクレヨンの成り立ち(仮)"
   url: " "
   avatar: "assets/img/speaker/noimage.png"
 
 - id: ""
   fullname: "no image"
   organization: "TIS ."
-  title: "ビッグデータ on AWS"
+  title: "ビッグデータ on AWS(仮)"
   url: " "
   avatar: "assets/img/speaker/noimage.png"
