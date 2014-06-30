@@ -6,4 +6,4 @@ env:
     - secure: "CWD301v5ZEN+zw5ZnT5uX8ySebtTXYTto2UgySStvCFdosNXEDvt2LKAiH2zBX3yJPRTkPKE3ZGft+9mfVSt/YV/F26qbQVTAy0GsUf17F+/+yCL3HOa6rwbtzkJzZFSLaceMkXu1M3VUCX3yPPMWk+eB1hk8JyziA+ui5qNZ1Q="
 script: bundle exec rake build
 after_success:
-  - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && bundle exec rake publish
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && bundle exec rake publish'
