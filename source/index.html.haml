@@ -45,10 +45,10 @@ layout    : layout
 
     %section#section-time-table.cols
       %h1 Time table
-
+      %h1.time-table-place Dev@研修室1,2
       .col
         %ul.time-table-list
-          - data.timetable.each do |tt|
+          - data.timetableA.each do |tt|
             %li
               .head
                 .time
@@ -62,8 +62,23 @@ layout    : layout
                     %i.icon-external-link
                 - else
                   = tt.body
-              .speaker-place
-                = tt.place
+      %h1.time-table-place Biz@研修室3
+      .col
+        %ul.time-table-list
+          - data.timetableB.each do |tt|
+            %li
+              .head
+                .time
+                  = tt.time
+                .speaker-name
+                  = tt.speaker
+              .body
+                - if tt.url.present?
+                  %a{href: "#{tt.url}", target: "_blank"}
+                    #{tt.body}
+                    %i.icon-external-link
+                - else
+                  = tt.body
 
     %section#section-speaker.cols
       %h1 Session & Speaker

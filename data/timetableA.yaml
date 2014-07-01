@@ -2,40 +2,23 @@
   speaker: "@shiraco"
   body: "Opening"
   url: " "
-  place: "Dev@研修室1,2"
 
 - time: 19:15 to 19:45
   speaker: "@all"
   body: "TISエンジニアたちの自分戦略"
   url: " "
-  place: "Dev@研修室1,2"
-
-- time: 19:15 to 19:45
-  speaker: "@未定"
-  body: "ビッグデータ on AWS(仮)"
-  url: " "
-  place: "Biz@研修室3"
 
 - time: 19:50 to 20:20
   speaker: "@早瀬"
   body: "JAXA産業連携シンポジウム2014への挑戦(仮)"
   url: " "
-  place: "Dev@研修室1,2"
-
-- time: 19:50 to 20:20
-  speaker: "@岡部 and @山森"
-  body: "INTECコラボセッション コールクレヨンの成り立ち(仮)"
-  url: " "
-  place: "Biz@研修室3"
 
 - time: 20:25 to 20:55
   speaker: "@yktko & @minoruntw"
   body: "INTECコラボセッション クラウドとSIerの未来(仮)"
   url: " "
-  place: "Dev@研修室1,2"
 
 - time: 21:00 to 22:00
   speaker: "LT(5m) × 12"
   body: "LT懇親会"
   url: " "
-  place: "Dev@研修室1,2"

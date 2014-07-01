@@ -21,6 +21,14 @@
         height: 100%
 
 #section-time-table
+  h1.time-table-place
+    font-size: 150%
+    letter-spacing: 0.07em
+    line-height: 20px
+    color: $blue
+    padding: 0
+    position: relativea
+    text-align: center
   ul.time-table-list
     list-style-type: none
     margin: 0
@@ -61,14 +69,6 @@
     +at-breakpoint($break-desktop)
       display: table-cell
       padding: 7px
-  .speaker-place
-    +at-breakpoint($break-tablet)
-      display: block
-    +at-breakpoint($break-desktop)
-      display: table-cell
-      text-align: right
-      padding: 7px
-      color: $black
 
 #section-speaker
   ul.speaker-list

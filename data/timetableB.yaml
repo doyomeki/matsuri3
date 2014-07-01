@@ -1,0 +1,26 @@
+- time: 19:00 to 19:10
+  speaker: "Close"
+  body: "Close"
+  url: " "
+
+- time: 19:15 to 19:45
+  speaker: "@未定"
+  body: "ビッグデータ on AWS(仮)"
+  url: " "
+  place: "Biz@研修室3"
+
+- time: 19:50 to 20:20
+  speaker: "@岡部 and @山森"
+  body: "INTECコラボセッション コールクレヨンの成り立ち(仮)"
+  url: " "
+  place: "Biz@研修室3"
+
+- time: 20:25 to 20:55
+  speaker: "Close"
+  body: "Close"
+  url: " "
+
+- time: 21:00 to 22:00
+  speaker: "Close"
+  body: "close"
+  url: " "
