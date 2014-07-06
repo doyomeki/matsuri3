@@ -2,24 +2,6 @@
   .col-photo
     text-align: center
 
-#section-stream
-  .col-stream
-    text-align: center
-    .iframe-wrap
-      position: relative
-      width: 100%
-      margin-bottom: 20px
-      padding-top: 56.25%
-      +at-breakpoint($break-huge)
-        width: 80%
-        margin: 0 auto 20px
-      iframe
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-
 #section-time-table
   h1.time-table-place
     font-size: 150%
@@ -209,41 +191,6 @@
     +at-breakpoint($break-desktop)
       display: table-cell
       padding: 7px
-
-#section-sponsor
-  text-align: center
-  ul.sponsor-list
-    list-style-type: none
-    margin: 0
-    padding: 0
-    li.sponsor-list-item
-      display: inline-block
-      position: relative
-      line-height: 25px
-      margin-right: 0
-      margin-bottom: 2%
-      +at-breakpoint($break-tablet)
-        margin-right: 10%
-      &:last-child
-        margin-right: 0
-      .sponsor-img
-        width: 243px
-        border-bottom: 1px solid #eee
-        &:hover
-          border-bottom: 1px solid #ccc
-        img
-          display: block
-          width: 100%
-          height: 100%
-          padding-bottom: 10%
-          -webkit-border-radius: 3px
-          border-radius: 3px
-          &:hover
-            opacity: 0.8
-      .sponsor-role
-        margin-top: 5%
-        font-size: 100%
-        font-weight: bold
 
 #section-team
   ul.team-list
