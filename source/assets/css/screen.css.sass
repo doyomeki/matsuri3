@@ -54,37 +54,6 @@ section
     padding: 0
     position: relative
     text-align: center
-    &:before
-      content: ''
-      position: absolute
-      top: 0
-      left: -15%
-      z-index: -1
-      width: 130%
-      height: 0
-      border: 25px solid rgba(0, 0, 0, 0)
-      border-left: 25px solid $white
-      border-right: 25px solid $white
-    &:after
-      content: ''
-      width: 100%
-      height: 0
-      position: absolute
-      top: 100%
-      left: 0
-      z-index: -1
-      border-top: 18px solid $white
-      border-left: 18px solid transparent
-      border-right: 18px solid transparent
-      background-size: cover, cover, 4px 4px, cover
-    &:before
-      background: $white
-      background-size: cover, cover, 4px 4px, cover
-      box-sizing: border-box
-      background-origin: border-box
-    &:after
-      box-sizing: border-box
-      background-origin: border-box
     +at-breakpoint($break-phone)
       width: 75%
       margin: 0 auto 8%
