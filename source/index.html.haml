@@ -124,6 +124,8 @@ layout    : layout
                 .speaker-name
                   - if lt.id.present?
                     %a{href: "https://twitter.com/#{lt.id}", target: "_blank"} #{lt.id}
+                  - elsif lt.name.present?
+                    #{lt.name}
                   - else
               .body
                 - if lt.url.present?
