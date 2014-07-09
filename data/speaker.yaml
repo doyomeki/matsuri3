@@ -1,16 +1,16 @@
-- id: "" 
-  fullname: "Ryo Hayase"
-  organization: "TIS 公S1."
-  title: "JAXA産業連携シンポジウム2014への挑戦(仮)"
-  url: " "
-  avatar: "assets/img/speaker/hayase.JPG"
-
 - id: shiraco
   fullname: "Koji Shiraishi"
   organization: "TIS STC."
   title: "TISエンジニアたちの自分戦略"
   url: " "
   avatar: "assets/img/speaker/shiraco.png"
+
+- id: "" 
+  fullname: "Ryo Hayase"
+  organization: "TIS 公S1."
+  title: "JAXA産業連携シンポジウム2014への挑戦(仮)"
+  url: " "
+  avatar: "assets/img/speaker/hayase.JPG"
 
 - id: minoruntw
   fullname: "Minoru Naito"
@@ -27,6 +27,13 @@
   avatar: "assets/img/speaker/yktko.jpg"
 
 - id: ""
+  fullname: "no image"
+  organization: "TIS ."
+  title: "ビッグデータ on AWS(仮)"
+  url: " "
+  avatar: "assets/img/speaker/noimage.png"
+
+- id: ""
   fullname: "Koichiro Okabe"
   organization: "TIS CT推."
   title: "INTECコラボセッション Callクレヨンの成り立ち(仮)"
@@ -37,12 +44,5 @@
   fullname:  "Masafumi Yamamori"
   organization: "INTEC ."
   title: "INTECコラボセッション Callクレヨンの成り立ち(仮)"
-  url: " "
-  avatar: "assets/img/speaker/noimage.png"
-
-- id: ""
-  fullname: "no image"
-  organization: "TIS ."
-  title: "ビッグデータ on AWS(仮)"
   url: " "
   avatar: "assets/img/speaker/noimage.png"
