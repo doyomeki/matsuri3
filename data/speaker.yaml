@@ -8,23 +8,37 @@
 - id: ""
   fullname: "Ryo Hayase"
   organization: "TIS 公S1."
-  title: "『JAXA産業連携シンポジウム2014』への挑戦 ～若手有志によるビジネスアイデアの創出と受賞への道のり～"
+  title: "『JAXA産業連携シンポジウム2014』への挑戦"
   url: " "
   avatar: "assets/img/speaker/hayase.JPG"
 
 - id: minoruntw
   fullname: "Minoru Naito"
   organization: "TIS GIS."
-  title: "インテック＆TIS IaaSとSIerの未来"
+  title: "クラウドとSIerの未来"
   url: " "
   avatar: "assets/img/speaker/minoruntw.jpg"
 
 - id: yktko
   fullname: "Yukitaka Ohmura"
   organization: "インテック ."
-  title: "インテック＆TIS IaaSとSIerの未来"
+  title: "クラウドとSIerの未来"
   url: " "
   avatar: "assets/img/speaker/yktko.jpg"
+
+- id: ""
+  fullname: "Koichiro Okabe"
+  organization: "TIS CT推."
+  title: "ジョイントビジネス成功パターン   Callクレヨンの場合"
+  url: " "
+  avatar: "assets/img/speaker/okabe.jpg"
+
+- id: ""
+  fullname:  "Masafumi Yamamori"
+  organization: "インテック コンサルティング事業部."
+  title: "ジョイントビジネス成功パターン   Callクレヨンの場合"
+  url: " "
+  avatar: "assets/img/speaker/yamamori.jpg"
 
 - id: ""
   fullname: "Tomoya Furukawa"
@@ -33,16 +47,3 @@
   url: " "
   avatar: "assets/img/speaker/icon_6m_192.png"
 
-- id: ""
-  fullname: "Koichiro Okabe"
-  organization: "TIS CT推."
-  title: "インテック＆TIS ジョイントビジネス成功パターン -Callクレヨンの場合"
-  url: " "
-  avatar: "assets/img/speaker/okabe.jpg"
-
-- id: ""
-  fullname:  "Masafumi Yamamori"
-  organization: "インテック ."
-  title: "インテック＆TIS ジョイントビジネス成功パターン -Callクレヨンの場合"
-  url: " "
-  avatar: "assets/img/speaker/noimage.png"
